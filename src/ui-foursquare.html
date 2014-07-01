@@ -1,0 +1,20 @@
+<polymer-element name="ui-foursquare" attributes="width height dotColor xLabel yLabel">
+<template>
+  <link rel="stylesheet" type="text/css" href="./ui-foursquare.css" >
+  <svg height="{{height}}" width="{{width}}" on-mousemove="{{moveElement}}" on-mouseup="{{endMove}}">
+    <line x1="0" y1="{{height-20}}" x2="{{width}}" y2="{{height-20}}" class="axis-line" />
+    <line x1="1" y1="0" x2="1" y2="{{height-20}}" class="axis-line" />
+
+    <line x1="2" y1="{{height/2-10}}" x2="{{width-2}}" y2="{{height/2-10}}" class="xaxis four-square-line" />
+    <line x1="{{width/2}}" y1="0" x2="{{width/2}}" y2="{{height-20}}" class="yaxis four-square-line" />
+
+    <text x="{{width}}" y="{{height-5}}" text-anchor="end" class="axis-label">{{xLabel}}</text>
+    <text x="5" y="10" class="axis-label">{{yLabel}}</text>
+
+    <circle cx="{{(width/2)+100}}" cy="{{(height/2)-100}}" r="10" class="marker" fill="{{dotColor}}" transform="matrix(1 0 0 1 0 0)" on-mousedown="{{startMove}}" />
+
+    Sorry, your browser does not support inline SVG.
+  </svg>
+</template>
+<script src="./ui-foursquare.js"></script>
+</polymer-element>

@@ -1,0 +1,22 @@
+:host {
+  -webkit-user-select: none;
+  user-select: none;
+}
+:host .marker {
+  cursor: move;
+  stroke: #333333;
+  stroke-width: 1;
+}
+:host .four-square-line {
+  stroke: #999999;
+  stroke-width: 1;
+  stroke-dasharray: 5,5;
+}
+:host .axis-line {
+  stroke: #333333;
+  stroke-width: 2;
+}
+:host .axis-label {
+  font-size: 0.8em;
+  fill: #000000;
+}

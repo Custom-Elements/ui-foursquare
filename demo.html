@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ui-foursquare</title>
+    <script src="node_modules/polymer/platform.js"></script>
+    <link rel="import" href="node_modules/polymer/polymer.html">
+    <link rel="import" href="build/ui-foursquare.html">
+    <style>
+      body {
+        font-family: "Helvetica Neue", "Helvetica", Arial;
+        position: relative;
+      }
+
+      button {
+        padding:10px;
+        background-color:#efefef;
+        border:1px solid #666;
+      }
+    </style>
+  </head>
+  <body unresolved>
+      <ui-foursquare height="400" width="400" dotColor='#3498db' xLabel='Client Seniority' yLabel='Complexity of Project' callback="pointOnGraphCallback"></ui-foursquare>
+
+      <script>
+        function pointOnGraphCallback(x,y) {
+          console.log(x,y)
+        }
+      </script>
+  </body>
+</html>

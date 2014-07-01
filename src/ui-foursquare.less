@@ -1,0 +1,29 @@
+@foursqareColor: #999;
+@axisColor: #333;
+
+:host {
+  -webkit-user-select: none;
+  user-select: none;
+
+  .marker {
+    cursor: move;
+    stroke: @axisColor;
+    stroke-width: 1;
+  }
+
+  .four-square-line {
+    stroke: @foursqareColor;
+    stroke-width: 1;
+    stroke-dasharray:5,5;
+  }
+
+  .axis-line {
+    stroke: @axisColor;
+    stroke-width: 2;
+  }
+
+  .axis-label {
+    font-size: 0.8em;
+    fill: darken(@axisColor, 90%);
+  }
+}
