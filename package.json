@@ -15,11 +15,11 @@
     "gulp-concat": "",
     "vulcanize": "",
     "express": "",
-    "polymer": "git://github.com/Custom-Elements/polymer",
+    "polymer": "git+https://github.com/Custom-Elements/polymer",
     "express-livereload": "0.0.24",
-    "ui-fonts": "git://github.com/custom-elements/ui-fonts.git",
+    "ui-fonts": "git+https://github.com/custom-elements/ui-fonts.git",
     "lodash": "^2.4.1",
-    "ui-styles": "git://github.com/custom-elements/ui-styles"
+    "ui-styles": "git+https://github.com/custom-elements/ui-styles"
   },
   "license": "MIT",
   "scripts": {
